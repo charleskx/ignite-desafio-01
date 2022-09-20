@@ -1,0 +1,69 @@
+:root {
+  --white: #FFF;
+
+  --purple: #8284FA;
+  --purple-dark: #5E60CE;
+  --blue: #4EA8DE;
+  --blue-dark: #1E6F9F;
+
+  --gray-700: #0D0D0D;
+  --gray-600: #1A1A1A;
+  --gray-500: #262626;
+  --gray-400: #333333;
+  --gray-300: #808080;
+  --gray-200: #D9D9D9;
+  --gray-100: #F2F2F2;
+
+  --danger: #E25858;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--gray-100);
+}
+
+::placeholder {
+  color: var(--gray-200);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-500) var(--gray-200);
+}
+
+body {
+  background: var(--gray-600);
+  color: var(--gray-300);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--gray-200);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--gray-500);
+  border-radius: 20px;
+  border: 2px solid var(--gray-200);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}

@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  height: 12.5rem;
+  background: var(--gray-700);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+  position: relative;
+}
+
+.header img {
+  height: 3rem;
+  margin-bottom: 5rem;
+}
+
+.addWrapper {
+  width: 100%;
+  max-width: 50rem;
+  height: 3.375rem;
+  padding: 0 2rem;
+
+  display: flex;
+  gap: .5rem;
+
+  position: absolute;
+  bottom: calc(0px - 3.375rem/2);
+}
+
+.addWrapper button {
+  width: 5.625rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  transition: background-color .2s;
+}
+
+.addWrapper button:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.addWrapper button:disabled {
+  cursor: not-allowed;
+  opacity: .8;
+}
+
+.addWrapper input {
+  flex: 1;
+  padding: 1rem;
+  
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  
+  line-height: 140%;
+}
+
+.addWrapper input::placeholder {
+  color: var(--gray-300);
+
+}
+
+.addWrapper input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--purple-dark);
+}

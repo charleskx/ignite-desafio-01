@@ -1,0 +1,78 @@
+li {
+  list-style: none;
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.taskDone {
+  border: 1px solid var(--gray-500);
+}
+
+li + li {
+  margin-top: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+li div img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.unchecked {
+  color: var(--blue);
+}
+
+.checked {
+  color: var(--purple);
+}
+
+li div p {
+  font-size: .875rem;
+  color: var(--gray-100);
+  text-align: left;
+}
+
+.textRisked {
+  color: var(--gray-300)!important;
+  text-decoration: line-through;
+}
+
+li button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+li button svg {
+  color: var(--gray-300);
+}
+
+li button:hover svg, li button:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+}
